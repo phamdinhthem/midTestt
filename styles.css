@@ -1,0 +1,617 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    position: relative;
+    /* Tạo ngữ cảnh định vị */
+}
+
+.bg-16 {
+    background-image: url("./asset/Rectangle 16.svg");
+    background-repeat: no-repeat;
+    position: absolute;
+
+    top: 2%;
+    left: 20%;
+    width: 50%;
+    height: 100%;
+}
+
+.bg-19 {
+    background-image: url("./asset/Rectangle 19.svg");
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 76%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    /* Căn giữa */
+    width: 50%;
+    height: 100%;
+}
+
+.bg-15 {
+    background-image: url("./asset/Rectangle 15.svg");
+    background-repeat: no-repeat;
+    position: absolute;
+    transform: translate(-0%, -50%);
+    bottom: 0;
+    top: 77%;
+    right: 0;
+
+    width: 50%;
+    height: 100%;
+}
+
+/* body{
+background-color: #FFFFFF;
+    background-image: url(./asset/Rectangle\ 16.svg), url("./asset/Rectangle 19.svg"), url("./asset/Rectangle 15.svg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: center, center ,  right;
+  background-size: 50%, 30%, 50%;
+        } */
+
+
+
+
+
+
+.container {
+    position: relative;
+    width: 1440px;
+}
+
+.container .main {
+    display: flex;
+    gap: 50px;
+    margin-bottom: 80px;
+
+}
+
+.container .header .menu {
+    display: flex;
+    gap: 70px;
+    margin-right: 70px;
+}
+
+.container .header .logo {
+    font-family: Poppins;
+    font-size: 36px;
+    font-weight: bold;
+    margin-left: 30px;
+}
+
+.container .header .user {
+    display: flex;
+    gap: 30px;
+
+}
+
+.container .header .user .bell img {
+    height: 24px;
+    width: 24px;
+}
+
+.container .header .user .bell {
+    display: flex;
+    align-items: center;
+}
+
+.container .header .user img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.container .header .user .nameus {
+    display: flex;
+    align-items: center;
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: bold;
+    color: #7200B8;
+    line-height: 100%;
+    margin-right: 20px;
+}
+
+.container .header .user {
+    gap: 40px;
+}
+
+.container .header {
+    /* margin-left: 128px; */
+    /* width: 1440px; */
+    height: 113px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    /* margin-right: 15px; */
+}
+
+.container .header .imgheader {
+    height: 60px;
+}
+
+.container .header .menu span {
+    font-family: Poppins;
+    size: 16px;
+    color: #000000;
+    font-weight: bold;
+}
+
+
+.container .sidebar {
+    /* margin-top: 20px; */
+    width: 254px;
+    height: 783px;
+    background-color: #000000;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+    border-radius: 8px;
+    gap: 50px;
+}
+
+.container .sidebar .sidebar-item-active {
+    /* margin-top: 35px; */
+    background-color: #A717FE;
+    width: 180px;
+    height: 70px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-family: Poppins;
+    font-size: 20px;
+}
+
+.container .sidebar .sidebar-item {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 20px;
+    font-family: Poppins;
+    font-size: 20px;
+}
+
+.container .sidebar .sidebar-item-logout {
+    margin-top: 170px;
+
+    display: flex;
+    /* justify-content: space-between; */
+    /* height: 100vh; */
+    gap: 20px;
+    align-items: center;
+    font-family: Poppins;
+    font-size: 20px;
+}
+
+
+.container .main-content {
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.container .main-content .main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+
+.container .main-content .main-header .reviews {
+    width: 226px;
+    height: 50px;
+    font-family: Poppins;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #7200B8;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+.container .main-content .options {
+    display: flex;
+    gap: 45px;
+}
+
+.container .main-content .options p {
+    font-family: Poppins;
+    font-size: 24px;
+    color: #DFF7F7;
+    height: 96px;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    background-color: #000000;
+}
+
+.container .main-content .mid-content {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container .main-content .mid-content .fistmid .loan-request {
+    width: 345px;
+    height: 321px;
+    font-family: Poppins;
+    font-size: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    background-color: #000000;
+    color: #FFFFFF;
+    border-radius: 8px;
+    letter-spacing: 2px;
+    line-height: 1.2;
+    box-shadow: 0px 0px 25px #00000040;
+}
+
+.container .main-content .mid-content .fistmid {
+    display: flex;
+    gap: 40px;
+
+}
+
+.container .main-content .mid-content .fistmid .repayment-plan {
+    width: 345px;
+    height: 321px;
+    font-family: Poppins;
+    font-size: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    background-color: #000000;
+    color: #FFFFFF;
+    border-radius: 8px;
+    letter-spacing: 2px;
+    line-height: 1.2;
+    text-align: center;
+    box-shadow: 0px 0px 25px #00000040;
+}
+
+.container .main-content .mid-content .latest-update {
+    width: 300px;
+    height: 500px;
+    border-radius: 8px;
+    color: #FFFFFF;
+    background-color: #000000;
+    font-family: Poppins;
+    font-size: 16px;
+    gap: 14px;
+    display: flex;
+    flex-direction: column;
+
+    padding: 20px 40px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+
+}
+
+.container .main-content .mid-content .latest-update h3 {
+    font-size: 24px;
+    text-align: center;
+}
+
+.container .main-content .bottom-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container .main-content .bottom-section {
+    display: flex;
+    justify-content: space-between;
+    /* justify-content: center; */
+
+}
+
+.container .main-content .bottom-section .loan-status {
+    height: 96px;
+    width: 412px;
+    color: white;
+    font-family: Poppins;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    background-color: #000000;
+    margin-left: 150px;
+    box-shadow: 0px 0px 25px #00000040;
+}
+
+.container .main-content .bottom-section .chat {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    font-family: Poppins;
+    font-size: 20px;
+    color: #7200B880;
+    padding: 10px;
+}
+
+.container .main-content .bottom-section .chat img {
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+}
+
+
+/* ========== TABLET (768px - 992px) ========== */
+@media (max-width: 992px) {
+    .container {
+        width: 100%;
+        padding: 0 15px;
+    }
+
+    @media (min-width: 768px) and (max-width: 1023px) {
+        body {
+            background-size: 50%, 70%, 50%;
+            background-position: top left, center, bottom right;
+        }
+
+        .bg-16,
+        .bg-15 {
+            width: 25%;
+            height: 20%;
+        }
+
+        .bg-19 {
+            width: 60%;
+            height: 40%;
+        }
+    }
+
+    .header {
+        height: auto;
+        padding: 15px;
+        flex-wrap: wrap;
+    }
+
+    .logo {
+        font-size: 28px;
+        margin: 0 auto 15px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .menu {
+        gap: 25px;
+        margin: 0 auto 15px;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .options {
+        justify-content: space-between;
+    }
+
+    .user {
+        margin: 0 auto;
+        justify-content: center;
+        margin-right: 0px;
+        margin-top: 20px;
+    }
+
+    .main {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .sidebar {
+        width: 100%;
+        height: auto;
+        margin-left: 0;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 15px;
+        gap: 10px;
+    }
+
+    .sidebar-item,
+    .sidebar-item-active {
+        width: calc(50% - 20px);
+        justify-content: flex-start;
+        padding: 12px 15px;
+        font-size: 16px;
+    }
+
+    .sidebar-item-logout {
+        width: 100%;
+        margin-top: 10px;
+        justify-content: center;
+    }
+
+    .main-content {
+        width: 100%;
+        gap: 20px;
+    }
+
+    .mid-content {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .fistmid {
+        flex-direction: column;
+        width: 100%;
+        gap: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .loan-request,
+    .repayment-plan {
+        width: 100%;
+        height: 220px;
+        font-size: 28px;
+    }
+
+    .latest-update {
+        width: 100%;
+        height: auto;
+        margin-top: 25px;
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .bottom-section {
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .loan-status {
+        width: 100%;
+        margin-left: 0;
+        display: flex;
+        align-items: center;
+    }
+}
+
+
+/* ========== MOBILE (< 768px) ========== */
+@media (max-width: 768px) {
+    .main {
+        margin-top: 90px;
+    }
+
+    .logo {
+        font-size: 24px;
+    }
+
+    @media (max-width: 768px) {
+
+        body {
+            background-size: 80%, 60%, 80%;
+            /* Thu nhỏ kích thước */
+            background-position: top center, center, bottom center;
+            /* Điều chỉnh vị trí */
+        }
+
+        .bg-16,
+        .bg-15 {
+            width: 30%;
+            height: 15%;
+        }
+
+        .bg-19 {
+            width: 70%;
+            height: 40%;
+        }
+    }
+
+    .menu {
+        gap: 15px;
+        margin-left: 60px;
+        justify-content: center;
+    }
+
+    .menu span {
+        font-size: 14px;
+    }
+
+    .user {
+        flex-direction: row;
+        gap: 2px;
+    }
+
+    .user img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .nameus {
+        font-size: 18px;
+    }
+
+    .sidebar {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .sidebar-item,
+    .sidebar-item-active {
+        width: 100%;
+    }
+
+    .main-header {
+        flex-direction: row;
+        gap: 15px;
+    }
+
+    .reviews {
+        width: 100%;
+        height: 45px;
+        font-size: 16px;
+    }
+
+    .options {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .options p {
+        width: 100%;
+        height: 60px;
+        font-size: 18px;
+    }
+
+    .loan-request,
+    .repayment-plan {
+        height: 180px;
+        font-size: 24px;
+    }
+
+    .latest-update h3 {
+        font-size: 20px;
+    }
+
+    .latest-update p {
+        font-size: 14px;
+    }
+
+    .loan-status {
+        height: 70px;
+        font-size: 18px;
+    }
+
+    .bottom-section {
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 90px;
+        justify-content: center;
+    }
+
+    .chat {
+        font-size: 16px;
+    }
+
+    .chat img {
+        width: 30px;
+        height: 30px;
+    }
+}
